@@ -1,0 +1,23 @@
+<p>
+  ng-if works!
+</p>
+
+<div *ngIf = 'myvalue; else elseblock'>
+  hello
+</div>
+<ng-template #elseblock>
+    <h1>hello else block</h1>
+</ng-template>
+
+<!-- another way-->
+  <div *ngIf ='displayname; then firstBlock; else secondBlock'></div>
+
+    <ng-template #firstBlock>
+      hello first
+    </ng-template>
+
+    <ng-template #secondBlock>
+      hello second
+    </ng-template>
+
+<!-- another way-->

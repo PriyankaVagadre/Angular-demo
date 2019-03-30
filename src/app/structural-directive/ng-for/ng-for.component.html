@@ -1,0 +1,32 @@
+<p>
+  ng-for works!
+</p>
+
+<div *ngFor ='let color of colors'>
+  <li>{{color}}</li>
+</div><br/>
+
+<h2>index </h2>
+<div *ngFor ='let color of colors; index as i;'>
+  <li> {{i}} {{color}}</li>
+</div><br/>
+
+<h2>first element</h2>
+<div *ngFor ='let color of colors; first as f'>
+  <li> {{f}} {{color}}</li>
+</div><br/>
+
+<h2>last element</h2>
+<div *ngFor ='let color of colors; last as l; '>
+  <li> {{l}} {{color}}</li>
+</div><br/>
+
+<h2>odd element</h2>
+<div *ngFor ='let color of colors; odd as o;'>
+  <li>{{o}} {{color}}</li>
+</div><br/>
+
+<h2>even element</h2>
+<div *ngFor ='let color of colors; even as e'>
+  <li>{{e}} {{color}}</li>
+</div>

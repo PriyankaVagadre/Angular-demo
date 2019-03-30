@@ -1,0 +1,9 @@
+<p>
+  ng-switch works!
+</p>
+<div [ngSwitch] ='color'>
+   <div *ngSwitchCase = "'red'" [style.color] ="'red'">you picked red color</div>
+   <div *ngSwitchCase = "'blue'" [ngStyle] ='myblue'>you picked blue color</div>
+   <div *ngSwitchCase = "'green'"  [style.color] = 'mygreen'>you picked green color</div>
+   <div *ngSwitchDefault> You hv't picked any color</div>
+</div>

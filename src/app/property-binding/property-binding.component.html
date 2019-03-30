@@ -1,0 +1,12 @@
+<p>
+  property-binding works!
+</p>
+<input type="text" value="test" [id]="id"/>
+<!-- interpolerrization did not work with property as it works only with string -->
+<!-- a good practice to property binding -->
+
+<input type="text" name="name" value={{myname}} [disabled]='isdiabled'/>
+
+<!-- or you can write -->
+
+<input type="text" name="name" value={{myname}} bind-disabled='isdiabled'/> 
