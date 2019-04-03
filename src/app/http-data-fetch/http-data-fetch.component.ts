@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-// import { HttpClient, HttpHeaders } from '@angular/common/http'; //import the httpclient
+import { HttpClient } from '@angular/common/http'; //import the httpclient
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-http-data-fetch',
@@ -9,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HttpDataFetchComponent implements OnInit {
 
-  constructor() { }
+  baseUrl ='assets/db.json';
+
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
+  }
+
+  get_products(){
+    this.httpClient.get(this.baseUrl).subscribe((res)=>{
+      console.log(res);
+    })
   }
 
 }

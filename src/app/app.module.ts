@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { HttpClientModule } from '@angular/common/http'; //import http module
+import { HttpClientModule } from '@angular/common/http'; // import http module
 
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { HttpDataFetchComponent } from './http-data-fetch/http-data-fetch.component';
+import { LoginComponent } from './login/login.component'; // login component
+import { RegisterComponent } from './register/register.component'; // register component
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { HttpDataFetchComponent } from './http-data-fetch/http-data-fetch.compon
     PipesComponent,
     EmployeeListComponent,
     EmployeeDetailsComponent,
-    HttpDataFetchComponent
+    HttpDataFetchComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
