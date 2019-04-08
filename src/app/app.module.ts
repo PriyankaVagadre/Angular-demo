@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { HttpClientModule } from '@angular/common/http'; // import http module
-
+// import { TextMaskModule } from 'angular2-text-mask';
+import {NgxMaskModule} from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +22,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { HttpDataFetchComponent } from './http-data-fetch/http-data-fetch.component';
 import { LoginComponent } from './login/login.component'; // login component
 import { RegisterComponent } from './register/register.component'; // register component
+import { InputMaskComponent } from './input-mask/input-mask.component'; 
 
 @NgModule({
   declarations: [
@@ -41,13 +42,16 @@ import { RegisterComponent } from './register/register.component'; // register c
     EmployeeDetailsComponent,
     HttpDataFetchComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    InputMaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    // TextMaskModule
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

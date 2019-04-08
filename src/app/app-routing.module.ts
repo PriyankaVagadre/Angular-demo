@@ -12,6 +12,7 @@ import { NgSwitchComponent } from './structural-directive/ng-switch/ng-switch.co
 import { InputOutputComponent } from './input-output/input-output.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HttpDataFetchComponent } from './http-data-fetch/http-data-fetch.component';
+import { InputMaskComponent } from './input-mask/input-mask.component';
 
 const routes: Routes = [
   { path: '',
@@ -65,6 +66,10 @@ const routes: Routes = [
   {
     path: 'http',
     component: HttpDataFetchComponent
+  },
+  {
+    path: 'input-masking',
+    component: InputMaskComponent
   }
 
 ];
