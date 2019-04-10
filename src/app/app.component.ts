@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {EmployeeService} from './employee.service'; // import your service
+import {EmployeeService} from './services/employee.service'; // import your service
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,10 @@ import {EmployeeService} from './employee.service'; // import your service
 })
 export class AppComponent {
   title = 'my-app';
-  public name ='Priyanka';
-  public sername ='Vagadre';
+  public name = 'Priyanka';
+  public sername = 'Vagadre';
 
-  public message ='hello';
+  public message = 'hello';
 
  
 }

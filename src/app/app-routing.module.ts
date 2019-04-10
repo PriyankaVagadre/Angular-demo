@@ -13,7 +13,10 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HttpDataFetchComponent } from './http-data-fetch/http-data-fetch.component';
 import { InputMaskComponent } from './input-mask/input-mask.component';
-
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SettingComponent } from './setting/setting.component';
+import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
+import { SettingContactComponent } from './setting/setting-contact/setting-contact.component';
 const routes: Routes = [
   { path: '',
     redirectTo: '/',
@@ -70,7 +73,33 @@ const routes: Routes = [
   {
     path: 'input-masking',
     component: InputMaskComponent
-  }
+  },
+  {
+    path: 'setting',
+    component : SettingComponent,
+    children : [
+       {
+         path : '',
+         redirectTo : 'contact',
+         pathMatch : 'full',
+       },
+       {
+         path : 'contact',
+         component : SettingContactComponent
+       },
+       {
+         path : 'address',
+         component : SettingAddressComponent
+       },
+       {
+         path : '**',
+         component : SettingAddressComponent
+       }
+    ]
+  },
+  { path: '**',
+    component: PageNotFoundComponent
+  },
 
 ];
 

@@ -22,7 +22,14 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { HttpDataFetchComponent } from './http-data-fetch/http-data-fetch.component';
 import { LoginComponent } from './login/login.component'; // login component
 import { RegisterComponent } from './register/register.component'; // register component
-import { InputMaskComponent } from './input-mask/input-mask.component'; 
+import { InputMaskComponent } from './input-mask/input-mask.component';
+import { EmployeeModuleModule } from './new-employee-list/employee-module.module';
+import { NewTestModuleModule } from './new-test-module/new-test-module.module';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SettingComponent } from './setting/setting.component';
+import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
+import { SettingContactComponent } from './setting/setting-contact/setting-contact.component';
 
 @NgModule({
   declarations: [
@@ -43,15 +50,22 @@ import { InputMaskComponent } from './input-mask/input-mask.component';
     HttpDataFetchComponent,
     LoginComponent,
     RegisterComponent,
-    InputMaskComponent
+    InputMaskComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    SettingComponent,
+    SettingAddressComponent,
+    SettingContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    EmployeeModuleModule, // import module;
     // TextMaskModule
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    NewTestModuleModule , // import test module;
   ],
   providers: [],
   bootstrap: [AppComponent]
