@@ -10,3 +10,4 @@ import { NewEmployeeListComponent } from './new-employee-list.component';
   exports: [NewEmployeeListComponent] // export the componenet
 })
 export class EmployeeModuleModule { }
+

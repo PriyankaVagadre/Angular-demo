@@ -17,6 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SettingComponent } from './setting/setting.component';
 import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
 import { SettingContactComponent } from './setting/setting-contact/setting-contact.component';
+import { MatSlideToggleComponent } from './mat-slide-toggle/mat-slide-toggle.component';
 const routes: Routes = [
   { path: '',
     redirectTo: '/',
@@ -75,9 +76,13 @@ const routes: Routes = [
     component: InputMaskComponent
   },
   {
+    path: 'mat-slide-toggle',
+    component: MatSlideToggleComponent
+  },
+  {
     path: 'setting',
     component : SettingComponent,
-    children : [
+    children : [ // children
        {
          path : '',
          redirectTo : 'contact',
@@ -108,3 +113,23 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponent = [
+  PropertyBindingComponent,
+  PageNotFoundComponent,
+  SettingAddressComponent,
+  SettingContactComponent,
+  SettingComponent,
+  MatSlideToggleComponent,
+  InputMaskComponent,
+  HttpDataFetchComponent,
+  PipesComponent,
+  InputOutputComponent,
+  NgSwitchComponent,
+  NgForComponent,
+  NgIfComponent,
+  TwoWayDataBindingComponent,
+  BindClassesComponent,
+  StyleBindingComponent,
+  EventBindingComponent,
+  TemplateReferenceVariableComponent
+]

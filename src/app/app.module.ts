@@ -30,7 +30,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SettingComponent } from './setting/setting.component';
 import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
 import { SettingContactComponent } from './setting/setting-contact/setting-contact.component';
-
+import { MatSlideToggleComponent } from './mat-slide-toggle/mat-slide-toggle.component';
+//import {MatSlideToggleModule} from '@angular/material/slide-toggle'; //module for slide toggle
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import { SettingContactComponent } from './setting/setting-contact/setting-conta
     SettingComponent,
     SettingAddressComponent,
     SettingContactComponent,
+    MatSlideToggleComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +68,7 @@ import { SettingContactComponent } from './setting/setting-contact/setting-conta
     // TextMaskModule
     NgxMaskModule.forRoot(),
     NewTestModuleModule , // import test module;
+    //MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

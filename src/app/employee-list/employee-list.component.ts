@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import {EmployeeService} from '../services/employee.service'; // import your service
+import {FetchDataServiceService} from '../services/fetch-data-service.service'; // import your service
 
 @Component({
   selector: 'app-employee-list',
@@ -11,10 +10,10 @@ export class EmployeeListComponent implements OnInit {
 
   employees = [];
 
-  constructor( public employeeSer: EmployeeService ) {}
+  constructor( public employeeSer: FetchDataServiceService ) {}
 
   ngOnInit() {
-    this.employees = this.employeeSer.getDataOFEmployees();
+  //  this.employeeSer.getDataOFEmployees().subscribe(data => this.employees = data);
   }
 
 }
