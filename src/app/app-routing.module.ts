@@ -18,6 +18,9 @@ import { SettingComponent } from './setting/setting.component';
 import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
 import { SettingContactComponent } from './setting/setting-contact/setting-contact.component';
 import { MatSlideToggleComponent } from './mat-slide-toggle/mat-slide-toggle.component';
+
+import { DepartmentListComponent } from './department-list/department-list.component';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 const routes: Routes = [
   { path: '',
     redirectTo: '/',
@@ -101,6 +104,21 @@ const routes: Routes = [
          component : SettingAddressComponent
        }
     ]
+  },
+  {
+    path : 'department-list',
+    component : DepartmentListComponent,
+    // children : [
+    //   {
+    //     path: ':id',
+    //     component : DepartmentDetailComponent
+    //   }
+    // ]
+    
+  },
+  {
+    path : 'department-list/:id',
+    component : DepartmentDetailComponent
   },
   { path: '**',
     component: PageNotFoundComponent
