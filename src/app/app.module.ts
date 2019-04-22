@@ -6,34 +6,36 @@ import {NgxMaskModule} from 'ngx-mask';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PropertyBindingComponent } from './property-binding/property-binding.component';
-import { BindClassesComponent } from './bind-classes/bind-classes.component';
-import { StyleBindingComponent } from './style-binding/style-binding.component';
-import { EventBindingComponent } from './event-binding/event-binding.component';
-import { TemplateReferenceVariableComponent } from './template-reference-variable/template-reference-variable.component';
-import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { PropertyBindingComponent } from './apidata/basics-of-angular/property-binding/property-binding.component';
+import { BindClassesComponent } from './apidata/basics-of-angular/bind-classes/bind-classes.component';
+import { StyleBindingComponent } from './apidata/basics-of-angular/style-binding/style-binding.component';
+import { EventBindingComponent } from './apidata/basics-of-angular/event-binding/event-binding.component';
+import { TemplateReferenceVariableComponent } from './apidata/basics-of-angular/template-reference-variable/template-reference-variable.component';
+import { TwoWayDataBindingComponent } from './apidata/basics-of-angular/two-way-data-binding/two-way-data-binding.component';
 import { NgIfComponent } from './structural-directive/ng-if/ng-if.component';
 import { NgForComponent } from './structural-directive/ng-for/ng-for.component';
 import { NgSwitchComponent } from './structural-directive/ng-switch/ng-switch.component';
 import { InputOutputComponent } from './input-output/input-output.component';
-import { PipesComponent } from './pipes/pipes.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { PipesComponent } from './apidata/basics-of-angular/pipes/pipes.component';
+import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee/employee-details/employee-details.component';
 import { HttpDataFetchComponent } from './http-data-fetch/http-data-fetch.component';
 import { LoginComponent } from './login/login.component'; // login component
 import { RegisterComponent } from './register/register.component'; // register component
-import { InputMaskComponent } from './input-mask/input-mask.component';
-import { EmployeeModuleModule } from './new-employee-list/employee-module.module';
+import { InputMaskComponent } from './apidata/basics-of-angular/input-mask/input-mask.component';
+import { EmployeeModuleModule } from './new-employee/new-employee-list/employee-module.module';
 import { NewTestModuleModule } from './new-test-module/new-test-module.module';
 import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './apidata/basics-of-angular/page-not-found/page-not-found.component';
 import { SettingComponent } from './setting/setting.component';
 import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
 import { SettingContactComponent } from './setting/setting-contact/setting-contact.component';
-import { MatSlideToggleComponent } from './mat-slide-toggle/mat-slide-toggle.component';
-import { DepartmentListComponent } from './department-list/department-list.component';
-import { DepartmentDetailComponent } from './department-detail/department-detail.component';
+import { MatSlideToggleComponent } from './apidata/basics-of-angular/mat-slide-toggle/mat-slide-toggle.component';
+import { DepartmentListComponent } from './department/department-list/department-list.component';
+import { DepartmentDetailComponent } from './department/department-detail/department-detail.component';
 //import {MatSlideToggleModule} from '@angular/material/slide-toggle'; //module for slide toggle
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +63,7 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
     SettingContactComponent,
     MatSlideToggleComponent,
     DepartmentListComponent,
-    DepartmentDetailComponent
+    DepartmentDetailComponent,
   ],
   imports: [
     BrowserModule,
