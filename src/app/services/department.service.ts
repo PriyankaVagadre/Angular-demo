@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DepartmentList}  from '../app/department/department'
+import { DepartmentList}  from '../department/department'
 import { HttpClient } from '@angular/common/http';
 import { Observable , of } from 'rxjs';
 import 'rxjs';
