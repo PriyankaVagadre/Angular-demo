@@ -26,6 +26,7 @@ import { AppComponent } from './app.component';
 import { NewTestModuleModule } from './new-test-module/new-test-module.module';
 import { HomeComponent } from './home/home.component';
 import { TestmoduleModule } from './new-test-module/testmodule/testmodule.module';
+import { NgclassComponent } from './click/ngclass/ngclass.component';
 // import { PageNotFoundComponent } from './basics-of-angular/page-not-found/page-not-found.component';
 // import { SettingComponent } from './setting/setting.component';
 // import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
@@ -40,7 +41,8 @@ import { TestmoduleModule } from './new-test-module/testmodule/testmodule.module
   declarations: [
     AppComponent,
     routingComponent,
-    HomeComponent
+    HomeComponent,
+    NgclassComponent
   ],
   imports: [
     BrowserModule,
