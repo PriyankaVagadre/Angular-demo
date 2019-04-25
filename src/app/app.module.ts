@@ -25,6 +25,7 @@ import { AppComponent } from './app.component';
 // import { EmployeeModuleModule } from './new-employee/new-employee-list/employee-module.module';
 import { NewTestModuleModule } from './new-test-module/new-test-module.module';
 import { HomeComponent } from './home/home.component';
+import { TestmoduleModule } from './new-test-module/testmodule/testmodule.module';
 // import { PageNotFoundComponent } from './basics-of-angular/page-not-found/page-not-found.component';
 // import { SettingComponent } from './setting/setting.component';
 // import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
@@ -51,6 +52,7 @@ import { HomeComponent } from './home/home.component';
     NgxMaskModule.forRoot(),
     NewTestModuleModule , // import test module;
     //MatSlideToggleModule
+    TestmoduleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
