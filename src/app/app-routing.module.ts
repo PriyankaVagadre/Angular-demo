@@ -17,12 +17,12 @@ import { SettingComponent } from './setting/setting.component';
 import { SettingAddressComponent } from './setting/setting-address/setting-address.component';
 import { SettingContactComponent } from './setting/setting-contact/setting-contact.component';
 import { MatSlideToggleComponent } from './basics-of-angular/mat-slide-toggle/mat-slide-toggle.component';
-
 import { DepartmentListComponent } from './department/department-list/department-list.component';
 import { DepartmentDetailComponent } from './department/department-detail/department-detail.component';
-
 import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee/employee-details/employee-details.component';
+import { CloseTabComponent } from './close-tab/close-tab.component';
+import { RouterSnapshotComponent } from './router-snapshot/router-snapshot.component';
 
 const routes: Routes = [
   { path: '',
@@ -82,6 +82,14 @@ const routes: Routes = [
     component: MatSlideToggleComponent
   },
   {
+    path : 'close',
+    component : CloseTabComponent
+  },
+  {
+    path : 'query-string',
+    component : RouterSnapshotComponent
+  },
+  {
     path: 'setting',
     component : SettingComponent,
     children : [ // children
@@ -119,9 +127,9 @@ const routes: Routes = [
     path : 'department-list/:id',
     component : DepartmentDetailComponent
   },
-  { path: '**',
-    component: PageNotFoundComponent
-  },
+  // { path: '**',
+  //   component: PageNotFoundComponent
+  // },
 
 ];
 
@@ -151,5 +159,7 @@ export const routingComponent = [
   DepartmentListComponent,
   DepartmentDetailComponent,
   EmployeeListComponent,
-  EmployeeDetailsComponent
+  EmployeeDetailsComponent,
+  CloseTabComponent,
+  RouterSnapshotComponent
 ]
