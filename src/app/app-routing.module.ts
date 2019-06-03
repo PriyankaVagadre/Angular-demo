@@ -23,11 +23,16 @@ import { EmployeeListComponent } from './employee/employee-list/employee-list.co
 import { EmployeeDetailsComponent } from './employee/employee-details/employee-details.component';
 import { CloseTabComponent } from './close-tab/close-tab.component';
 import { RouterSnapshotComponent } from './router-snapshot/router-snapshot.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '',
     redirectTo: '/',
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'property-binding',

@@ -10,7 +10,9 @@ import { NewTestModuleModule } from './new-test-module/new-test-module.module';
 import { HomeComponent } from './home/home.component';
 import { TestmoduleModule } from './new-test-module/testmodule/testmodule.module';
 import { NgclassComponent } from './click/ngclass/ngclass.component';
-
+import { DateCustomPipeComponent } from './date-custom-pipe/date-custom-pipe.component';
+import { NgGridComponent } from './ng-grid/ng-grid.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { NgclassComponent } from './click/ngclass/ngclass.component';
     routingComponent,
     HomeComponent,
     NgclassComponent,
+    DateCustomPipeComponent,
+    NgGridComponent,
     
   ],
   imports: [
@@ -27,9 +31,11 @@ import { NgclassComponent } from './click/ngclass/ngclass.component';
     HttpClientModule,
     NgxMaskModule.forRoot(),
     NewTestModuleModule , // import test module;
-    TestmoduleModule
+    TestmoduleModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports : [DateCustomPipeComponent]
 })
 export class AppModule { }
