@@ -13,13 +13,7 @@ import { NgclassComponent } from './click/ngclass/ngclass.component';
 import { DateCustomPipeComponent } from './date-custom-pipe/date-custom-pipe.component';
 import { NgGridComponent } from './ng-grid/ng-grid.component';
 import { AgGridModule } from 'ag-grid-angular';
-import { HeaderComponent } from './new-project/header/header.component';
-import { RecipeDetailComponent } from './new-project/recipes/recipe-detail/recipe-detail.component';
-import { RecipeListComponent } from './new-project/recipes/recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './new-project/recipes/recipe-list/recipe-item/recipe-item.component';
-import { RecipesComponent } from './new-project/recipes/recipes.component';
-import { ShopingListComponent } from './new-project/shoping-list/shoping-list.component';
-import { ShopingEditComponent } from './new-project/shoping-list/shoping-edit/shoping-edit.component';
+import { NewProjectModule } from './new-project/new-project.module';
 
 @NgModule({
   declarations: [
@@ -28,15 +22,8 @@ import { ShopingEditComponent } from './new-project/shoping-list/shoping-edit/sh
     HomeComponent,
     NgclassComponent,
     DateCustomPipeComponent,
-    NgGridComponent,
-    HeaderComponent,
-    RecipeDetailComponent,
-    RecipeListComponent,
-    RecipeItemComponent,
-    RecipesComponent,
-    ShopingListComponent,
-    ShopingEditComponent,
-    
+    NgGridComponent
+
   ],
   imports: [
     BrowserModule,
@@ -45,6 +32,7 @@ import { ShopingEditComponent } from './new-project/shoping-list/shoping-edit/sh
     HttpClientModule,
     NgxMaskModule.forRoot(),
     NewTestModuleModule , // import test module;
+    NewProjectModule,
     TestmoduleModule,
     AgGridModule.withComponents([])
   ],
