@@ -5,8 +5,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipesComponent } from './recipes/recipes.component';
-import { ShopingListComponent } from './shoping-list/shoping-list.component';
-import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.component';
+import { ShoppingListComponent } from './shoping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shoping-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.c
     RecipeListComponent,
     RecipeItemComponent,
     RecipesComponent,
-    ShopingListComponent,
-    ShopingEditComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
   ],
   imports: [
     CommonModule
@@ -27,8 +27,8 @@ import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.c
     RecipeListComponent,
     RecipeItemComponent,
     RecipesComponent,
-    ShopingListComponent,
-    ShopingEditComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
   ]
 })
 export class NewProjectModule { }
