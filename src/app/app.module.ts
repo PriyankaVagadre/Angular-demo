@@ -14,6 +14,9 @@ import { DateCustomPipeComponent } from './date-custom-pipe/date-custom-pipe.com
 import { NgGridComponent } from './ng-grid/ng-grid.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { NewProjectModule } from './new-project/new-project.module';
+import { HomeHazyComponent } from './lazy-loading/home-lazy/home.component';
+// import { AboutModule } from './lazy-loading/about/about.module';
+// import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { NewProjectModule } from './new-project/new-project.module';
     HomeComponent,
     NgclassComponent,
     DateCustomPipeComponent,
-    NgGridComponent
+    NgGridComponent,
+    HomeHazyComponent
 
   ],
   imports: [
@@ -34,6 +38,7 @@ import { NewProjectModule } from './new-project/new-project.module';
     NewTestModuleModule , // import test module;
     NewProjectModule,
     TestmoduleModule,
+
     AgGridModule.withComponents([])
   ],
   providers: [],
