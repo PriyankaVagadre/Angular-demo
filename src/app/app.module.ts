@@ -15,6 +15,13 @@ import { NgGridComponent } from './ng-grid/ng-grid.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { NewProjectModule } from './new-project/new-project.module';
 import { HomeHazyComponent } from './lazy-loading/home-lazy/home.component';
+
+import { ChildComponent } from './input-output-test/child/child.component';
+import { ParentComponent } from './input-output-test/parent/parent.component';
+import { Child1Component } from './input-output-test/child1/child1.component';
+import { Parent1Component } from './input-output-test/parent1/parent1.component';
+import { Child2Component } from './input-output-test/child2/child2.component';
+import { Parent3Component } from './input-output-test/parent3/parent3.component';
 // import { AboutModule } from './lazy-loading/about/about.module';
 // import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
 
@@ -26,7 +33,13 @@ import { HomeHazyComponent } from './lazy-loading/home-lazy/home.component';
     NgclassComponent,
     DateCustomPipeComponent,
     NgGridComponent,
-    HomeHazyComponent
+    HomeHazyComponent,
+    ChildComponent,
+    ParentComponent,
+    Child1Component,
+    Parent1Component,
+    Child2Component,
+    Parent3Component
 
   ],
   imports: [
