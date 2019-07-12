@@ -9,7 +9,6 @@ import { TwoWayDataBindingComponent } from './basics-of-angular/two-way-data-bin
 import { NgIfComponent } from './basics-of-angular/structural-directive/ng-if/ng-if.component';
 import { NgForComponent } from './basics-of-angular/structural-directive/ng-for/ng-for.component';
 import { NgSwitchComponent } from './basics-of-angular/structural-directive/ng-switch/ng-switch.component';
-import { InputOutputComponent } from './input-output/input-output.component';
 import { PipesComponent } from './basics-of-angular/pipes/pipes.component';
 import { InputMaskComponent } from './basics-of-angular/input-mask/input-mask.component';
 import { PageNotFoundComponent } from './basics-of-angular/page-not-found/page-not-found.component';
@@ -75,10 +74,10 @@ const routes: Routes = [
     path: 'ngSwitch',
     component : NgSwitchComponent
   },
-  {
-    path: 'input-output',
-    component : InputOutputComponent
-  },
+  // {
+  //   path: 'input-output',
+  //   component :
+  // },
   {
     path: 'pipes',
     component: PipesComponent
@@ -176,7 +175,6 @@ export const routingComponent = [
   MatSlideToggleComponent,
   InputMaskComponent,
   PipesComponent,
-  InputOutputComponent,
   NgSwitchComponent,
   NgForComponent,
   NgIfComponent,

@@ -22,6 +22,8 @@ import { Child1Component } from './input-output-test/child1/child1.component';
 import { Parent1Component } from './input-output-test/parent1/parent1.component';
 import { Child2Component } from './input-output-test/child2/child2.component';
 import { Parent3Component } from './input-output-test/parent3/parent3.component';
+import { CockpitComponent } from './input-output-viewchild/cockpit/cockpit.component';
+import { ServerElementComponent } from './input-output-viewchild/server-element/server-element.component';
 // import { AboutModule } from './lazy-loading/about/about.module';
 // import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
 
@@ -39,7 +41,9 @@ import { Parent3Component } from './input-output-test/parent3/parent3.component'
     Child1Component,
     Parent1Component,
     Child2Component,
-    Parent3Component
+    Parent3Component,
+    CockpitComponent,
+    ServerElementComponent
 
   ],
   imports: [
