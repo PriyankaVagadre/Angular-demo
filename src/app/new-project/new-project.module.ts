@@ -7,6 +7,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shoping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shoping-list/shopping-edit/shopping-edit.component';
+import { NewProjectRoutingModule } from './new-project.routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ShoppingEditComponent } from './shoping-list/shopping-edit/shopping-edi
     ShoppingEditComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NewProjectRoutingModule
   ],
   exports: [
     HeaderComponent,
