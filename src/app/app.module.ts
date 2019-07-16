@@ -24,6 +24,7 @@ import { Child2Component } from './input-output-test/child2/child2.component';
 import { Parent3Component } from './input-output-test/parent3/parent3.component';
 import { CockpitComponent } from './input-output-viewchild/cockpit/cockpit.component';
 import { ServerElementComponent } from './input-output-viewchild/server-element/server-element.component';
+import { ErrorsModule } from './http-errors/errors.module';
 // import { AboutModule } from './lazy-loading/about/about.module';
 // import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
 
@@ -43,7 +44,7 @@ import { ServerElementComponent } from './input-output-viewchild/server-element/
     Child2Component,
     Parent3Component,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
 
   ],
   imports: [
@@ -55,7 +56,7 @@ import { ServerElementComponent } from './input-output-viewchild/server-element/
     NewTestModuleModule , // import test module;
     NewProjectModule,
     TestmoduleModule,
-
+    ErrorsModule,
     AgGridModule.withComponents([])
   ],
   providers: [],

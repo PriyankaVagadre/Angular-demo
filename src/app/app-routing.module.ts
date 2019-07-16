@@ -23,11 +23,11 @@ import { EmployeeDetailsComponent } from './employee/employee-details/employee-d
 import { CloseTabComponent } from './close-tab/close-tab.component';
 import { RouterSnapshotComponent } from './router-snapshot/router-snapshot.component';
 import { HomeComponent } from './home/home.component';
-import { LoadingCellRenderer } from 'ag-grid-community/dist/lib/rendering/cellRenderers/loadingCellRenderer';
+// import { LoadingCellRenderer } from 'ag-grid-community/dist/lib/rendering/cellRenderers/loadingCellRenderer';
 import { HomeHazyComponent } from './lazy-loading/home-lazy/home.component';
 
-import { AboutModule } from './lazy-loading/about/about.module';
-import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
+// import { AboutModule } from './lazy-loading/about/about.module';
+// import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
 
 const routes: Routes = [
   { path: '',
@@ -157,6 +157,10 @@ const routes: Routes = [
     loadChildren : './lazy-loading/viewdetails/viewdetails.module#ViewdetailsModule'
 
   },
+  {
+    path: "error-page",
+    loadChildren : './http-errors/errors.module#ErrorsModule'
+  }
 
 
 ];
