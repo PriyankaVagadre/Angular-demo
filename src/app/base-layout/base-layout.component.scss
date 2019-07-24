@@ -1,0 +1,29 @@
+@import './layout.scss';
+
+  .top-navbar{
+    grid-area: top-navbar;
+    background: $topNav_background;
+    width: $topNav_Width;
+    height: $topNav_height;
+    position: absolute;
+    z-index: $topNav_zIndex;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  }
+  .main-container{
+    grid-area: main-container;
+    padding: 10px;
+  }
+  .left-navbar{
+
+  }
+  .base-layout{
+    display: grid;
+    height: 97vh;
+    overflow: hidden;
+    background: $theme_bg_color;
+    grid-template-columns: $leftNav_Width  auto;
+    grid-template-rows: $topNav_height  auto;
+    grid-template-areas:
+                 "top-navbar top-navbar"
+                "left-navbar main-container";
+  }

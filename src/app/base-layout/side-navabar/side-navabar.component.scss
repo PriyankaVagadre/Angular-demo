@@ -1,0 +1,33 @@
+@import '../layout.scss';
+
+.mat-nav-list{
+    grid-area: left-navbar;
+    background: $leftNav_background;
+    width: $leftNav_Width;
+    height: $leftNav_height;
+    position: absolute;
+    z-index: $leftNav_zIndex;
+  .navbar-title{
+      height: $list_element_height;
+      font-family: $font_family;
+      font-weight: $font_weight;
+      font-size: $font_size;
+      border-left: 2px solid transparent;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color: $font_color;
+        margin-left: -2px;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+    .navbar-title:hover{
+      background: $hover_bg;
+      border-left: 2px solid $theme_color;
+      a{
+        color:$font_hover_color;
+      }
+  }
+}

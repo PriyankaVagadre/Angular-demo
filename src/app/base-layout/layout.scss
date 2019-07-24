@@ -1,0 +1,25 @@
+//------------variables -------------------
+$theme_color : #2CB3B3;
+$theme_bg_color: #dddddd;
+  //-----Left navbar
+  $leftNav_background : #373F51;
+  $leftNav_Width : 70px;
+  $leftNav_height : calc(100vh - 45px);
+  $leftNav_zIndex : 0;
+  $list_element_height : 60px;
+  $hover_bg : #292F3D;
+     // text style
+     $font_family : 'Open Sans', sans-serif;
+     $font_weight: normal;
+     $font_size: 12px;
+     $font_color : #ffffff;
+     $font_hover_color : #E0E0E0;
+
+  //-----Top navbar
+  $topNav_background : #ffffff;
+  $topNav_Width : 100vw;
+  $topNav_height : 45px;
+  $topNav_zIndex : 10;
+
+
+  // Main Content area

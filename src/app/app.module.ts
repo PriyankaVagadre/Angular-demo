@@ -28,6 +28,12 @@ import { ErrorsModule } from './http-errors/errors.module';
 // import { AboutModule } from './lazy-loading/about/about.module';
 // import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
 
+import {MatIconModule} from '@angular/material/icon';
+import { BaseLayoutComponent } from './base-layout/base-layout.component';
+import { TopNavbarComponent } from './base-layout/top-navbar/top-navbar.component' //mat icon;
+import { SideNavabarComponent } from './base-layout/side-navabar/side-navabar.component';
+import { BaseContainerComponent } from './base-layout/base-container/base-container.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +51,10 @@ import { ErrorsModule } from './http-errors/errors.module';
     Parent3Component,
     CockpitComponent,
     ServerElementComponent,
+    SideNavabarComponent,
+    BaseLayoutComponent,
+    TopNavbarComponent,
+    BaseContainerComponent
 
   ],
   imports: [
@@ -57,10 +67,11 @@ import { ErrorsModule } from './http-errors/errors.module';
     NewProjectModule,
     TestmoduleModule,
     ErrorsModule,
+    MatIconModule, //mat icon;
     AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports : [DateCustomPipeComponent]
+  exports : [DateCustomPipeComponent, MatIconModule]
 })
 export class AppModule { }

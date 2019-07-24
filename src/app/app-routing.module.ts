@@ -157,10 +157,10 @@ const routes: Routes = [
     loadChildren : './lazy-loading/viewdetails/viewdetails.module#ViewdetailsModule'
 
   },
-  {
-    path: "error-page",
-    loadChildren : './http-errors/errors.module#ErrorsModule'
-  }
+  // {
+  //   path: "error-page",
+  //   loadChildren : './http-errors/errors.module#ErrorsModule'
+  // }
 
 
 ];
