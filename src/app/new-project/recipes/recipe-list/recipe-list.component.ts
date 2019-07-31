@@ -12,7 +12,7 @@ export class RecipeListComponent implements OnInit {
 
   @Input() recipes: Recipe[] = [
     new Recipe('A Test Recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg'),
-    new Recipe('A Test Recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg')
+    new Recipe('A Test Recipe 2', 'This is simply a test2 ', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg')
   ];
 
   constructor() { }
@@ -22,6 +22,9 @@ export class RecipeListComponent implements OnInit {
 
   recipeWasSelected(recipe : Recipe){
     this.selectedRecipe.emit(recipe);
+  }
+  AddNewrecipe(recipeElement : Recipe){
+    this.recipes.push(recipeElement);
   }
 
 }

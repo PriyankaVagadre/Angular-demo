@@ -4,11 +4,11 @@
   </div>
   <div class="col-md-7">
     <app-recipe-detail
-    *ngIf="recipeSection; else defultText"
+    *ngIf="recipeSection; else defaultText"
     [recipes] = "recipeSection"
     >
   </app-recipe-detail>
-    <ng-template #defultText>
+    <ng-template #defaultText>
       <p>Please select A recipe</p>
     </ng-template>
   </div>
