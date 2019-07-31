@@ -33,6 +33,8 @@ import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { TopNavbarComponent } from './base-layout/top-navbar/top-navbar.component' //mat icon;
 import { SideNavabarComponent } from './base-layout/side-navabar/side-navabar.component';
 import { BaseContainerComponent } from './base-layout/base-container/base-container.component';
+import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
+import { HightLightBackground } from './attribute-directive/highlight-bg.directive';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { BaseContainerComponent } from './base-layout/base-container/base-contai
     SideNavabarComponent,
     BaseLayoutComponent,
     TopNavbarComponent,
-    BaseContainerComponent
+    BaseContainerComponent,
+    AttributeDirectiveComponent,
+    HightLightBackground
 
   ],
   imports: [
