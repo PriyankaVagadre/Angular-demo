@@ -34,7 +34,8 @@ import { TopNavbarComponent } from './base-layout/top-navbar/top-navbar.componen
 import { SideNavabarComponent } from './base-layout/side-navabar/side-navabar.component';
 import { BaseContainerComponent } from './base-layout/base-container/base-container.component';
 import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
-import { HightLightBackground } from './attribute-directive/highlight-bg.directive';
+import { HightLightBackground } from './attribute-directive/normal-directive/highlight-bg.directive';
+import { BetterHightlightDirective } from './attribute-directive/better-directive/better-hightlight.directive';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { HightLightBackground } from './attribute-directive/highlight-bg.directi
     TopNavbarComponent,
     BaseContainerComponent,
     AttributeDirectiveComponent,
-    HightLightBackground
+    HightLightBackground,
+    BetterHightlightDirective
 
   ],
   imports: [
