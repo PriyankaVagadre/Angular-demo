@@ -1,0 +1,113 @@
+[
+  {
+    "dogs" : [
+        {
+          "name" : "dog1",
+          "gender" : "male",
+          "dog_id" : "1",
+          "child_id" : "2"
+        },
+        {
+          "name" : "dog2",
+          "gender" : "female",
+          "dog_id" : "2",
+          "child_id" : "1"
+        },
+        {
+          "name" : "dog3",
+          "gender" : "male",
+          "dog_id" : "3",
+          "child_id" : "3"
+        },
+        {
+          "name" : "dog4",
+          "gender" : "female",
+          "dog_id" : "4",
+          "child_id" : "4"
+
+        }
+    ]
+  },
+  {
+      "cats" : [
+        {
+          "name" : "cat1",
+          "gender" : "male",
+          "cat_id" : "1",
+          "cat_child" : [
+            {
+              "name" : "cat-child1",
+              "age" : "1 year"
+            }
+          ]
+      },
+      {
+        "name" : "cat2",
+        "gender" : "female",
+        "cat_id" : "2",
+        "cat_child" : [
+          {
+            "name" : "cat-child2",
+            "age" : "1 year"
+          }
+        ]
+      },
+      {
+        "name" : "cat3",
+        "gender" : "male",
+        "cat_id" : "3",
+        "cat_child" : [
+          {
+            "name" : "",
+            "age" : ""
+          }
+        ]
+      },
+      {
+        "name" : "cat4",
+        "gender" : "female",
+        "cat_id" : "4",
+        "cat_child" : [
+          {
+            "name" : "cat-child3",
+            "age" : "2 years"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "humans" : [
+      {
+        "name" : "human 1",
+        "gender" : "male",
+        "id" : "1",
+        "dog_id" : "4",
+        "cat_id" : "4"
+
+      },
+      {
+        "name" : "human 2",
+        "gender" : "female",
+        "id" : "2",
+        "dog_id" : "2",
+        "cat_id" : ""
+
+      },
+      {
+        "name" : "human 3",
+        "gender" : "male",
+        "id" : "3",
+        "dog_id" : "1",
+        "cat_id" : "3"
+      },
+      {
+        "name" : "human 4",
+        "gender" : "female",
+        "id" : "4",
+        "dog_id" : "4",
+        "cat_id" : "4"
+      }
+    ]
+  }
+]

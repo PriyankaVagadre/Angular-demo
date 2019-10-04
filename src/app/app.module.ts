@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'; // import http module
 // import { TextMaskModule } from 'angular2-text-mask';
 import {NgxMaskModule} from 'ngx-mask';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule , routingComponent} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewTestModuleModule } from './new-test-module/new-test-module.module';
@@ -36,6 +36,20 @@ import { BaseContainerComponent } from './base-layout/base-container/base-contai
 import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
 import { HightLightBackground } from './attribute-directive/normal-directive/highlight-bg.directive';
 import { BetterHightlightDirective } from './attribute-directive/better-directive/better-hightlight.directive';
+import { RxjsOperatorsComponent } from './rxjs-operators/rxjs-operators.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { FileUploader, FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
+import { PdfComponent } from './pdf/pdf.component';
+import {PdfViewerModule} from 'ng2-pdf-viewer';
+import { CommonModule } from '@angular/common';
+import {
+  MatButtonModule, MatCardModule, MatCheckboxModule, MatInputModule, MatToolbarModule, MatProgressSpinnerModule,
+  MatDialogModule, MatPaginatorModule, MatSortModule,
+  MatTableModule, MatNativeDateModule, MatOptionModule, MatSelectModule, MatMenuModule,
+  MatFormFieldModule, MatChipsModule, MatAutocompleteModule, MatDividerModule, MatGridListModule, MatGridList,
+  MatGridTile, MatSidenavModule, MatListModule, MatRadioModule, MatSliderModule
+} from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -60,10 +74,23 @@ import { BetterHightlightDirective } from './attribute-directive/better-directiv
     BaseContainerComponent,
     AttributeDirectiveComponent,
     HightLightBackground,
-    BetterHightlightDirective
+    BetterHightlightDirective,
+    RxjsOperatorsComponent,
+    FileUploadComponent,
+    PdfComponent,
+
+    FileUploadComponent,
+    FileSelectDirective,
+    FileDropDirective
 
   ],
   imports: [
+    CommonModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule, MatInputModule, MatProgressSpinnerModule, MatDialogModule,
+    MatDividerModule, MatGridListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatNativeDateModule, MatIconModule, MatOptionModule, MatSelectModule,
+    MatMenuModule, MatFormFieldModule, MatChipsModule, MatAutocompleteModule, MatSidenavModule, MatListModule, MatRadioModule, MatSliderModule
+,
+    FormsModule,
+    PdfViewerModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
@@ -73,6 +100,7 @@ import { BetterHightlightDirective } from './attribute-directive/better-directiv
     NewProjectModule,
     TestmoduleModule,
     ErrorsModule,
+    ReactiveFormsModule,
     MatIconModule, //mat icon;
     AgGridModule.withComponents([])
   ],

@@ -1,0 +1,6 @@
+<p>
+  pdf works!
+</p>
+<input (change)="onFileSelect()" type="file" id="file" />
+<input [(ngModel)]="page" type="text" id="page"/>
+<pdf-viewer [src]="pdfSrc" [render-text]="true" [page]="page" [show-all]= "true"></pdf-viewer>
