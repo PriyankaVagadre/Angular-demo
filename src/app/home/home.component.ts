@@ -15,11 +15,11 @@ export class HomeComponent implements OnInit {
     this.accountArray = this.accountservice.accounts;
   }
 
-  onStatusChanged(){
-    this.accountservice.onStatusChanged(name,status)
-  }
-  onAccountAdded(){
-    this.accountservice.onAccountAdded(name,status)
-  }
+  // onStatusChanged(){
+  //   this.accountservice.onStatusChanged(name,status)
+  // }
+  // onAccountAdded(){
+  //   this.accountservice.onAccountAdded(name,status)
+  // }
 }
 
