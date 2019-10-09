@@ -25,6 +25,7 @@ import { RouterSnapshotComponent } from './router-snapshot/router-snapshot.compo
 import { HomeComponent } from './home/home.component';
 // import { LoadingCellRenderer } from 'ag-grid-community/dist/lib/rendering/cellRenderers/loadingCellRenderer';
 import { HomeHazyComponent } from './lazy-loading/home-lazy/home.component';
+import { AuthGuard } from './auth-guard.service';
 
 // import { AboutModule } from './lazy-loading/about/about.module';
 // import { ViewdetailsModule } from './lazy-loading/viewdetails/viewdetails.module';
@@ -40,6 +41,7 @@ const routes: Routes = [
   },
   {
     path: 'property-binding',
+    canActivate : [AuthGuard],
     component: PropertyBindingComponent
   },
   {

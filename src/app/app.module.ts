@@ -51,6 +51,8 @@ import {
 } from '@angular/material';
 import { NewAccountComponent } from './service-test/new-account/new-account.component';
 import { AccountComponent } from './service-test/account/account.component';
+import { AuthService } from './auth.service';
+import { AuthGuard } from './auth-guard.service';
 
 
 @NgModule({
