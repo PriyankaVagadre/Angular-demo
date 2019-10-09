@@ -49,6 +49,8 @@ import {
   MatFormFieldModule, MatChipsModule, MatAutocompleteModule, MatDividerModule, MatGridListModule, MatGridList,
   MatGridTile, MatSidenavModule, MatListModule, MatRadioModule, MatSliderModule
 } from '@angular/material';
+import { NewAccountComponent } from './service-test/new-account/new-account.component';
+import { AccountComponent } from './service-test/account/account.component';
 
 
 @NgModule({
@@ -77,7 +79,8 @@ import {
     RxjsOperatorsComponent,
     FileUploadComponent,
     PdfComponent,
-
+    AccountComponent,
+    NewAccountComponent,
     FileUploadComponent,
     FileSelectDirective,
     FileDropDirective

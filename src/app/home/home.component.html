@@ -62,7 +62,7 @@
 <!----------- old angular code ----------------------->
 
 <!----------- new angular code ----------------------->
-
+<!--
   <app-header></app-header>
   <div class="container">
     <div class="row">
@@ -71,8 +71,24 @@
         <app-shopping-list></app-shopping-list>
       </div>
     </div>
-  </div>
+  </div> -->
 <!----------- new angular code ----------------------->
+
+<!-------------------service practise-------------->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <app-new-account (accountAdded)="onAccountAdded($event)"></app-new-account>
+      <hr>
+      <app-account
+        *ngFor="let acc of accountArray; let i = index"
+        [account]="acc"
+        [id]="i"
+        (statusChanged)="onStatusChanged($event)"></app-account>
+    </div>
+  </div>
+</div>
+<!-------------------service practise-------------->
 
 
 <!----------- lazy loading ----------------------->
