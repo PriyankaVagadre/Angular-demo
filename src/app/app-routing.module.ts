@@ -103,7 +103,7 @@ const routes: Routes = [
     path: 'setting',
     component : SettingComponent,
     // canActivate : [AuthGuard],
-     canActivateChild : [AuthGuard],
+    //  canActivateChild : [AuthGuard],
     children : [ // children
       //  {
       //    path : '',
