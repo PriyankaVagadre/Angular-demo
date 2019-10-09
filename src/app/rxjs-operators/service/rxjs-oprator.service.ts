@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import { RxjsObj } from '../model/object.model';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class RxjsOpratorService {
-  myrxjsObj : RxjsObj[];
-  url = "assets\object.json";
+  url = "../assets/object.json";
 
-  constructor(public httpclient : HttpClientModule) {}
+  constructor(public httpclient : HttpClient) {}
 
-  // getData(){
-  //   this.httpclient.get(this.url)
-  // }
+  getData() : Observable<RxjsObj>{
+   return this.httpclient.get<RxjsObj>(this.url);
+  }
 }

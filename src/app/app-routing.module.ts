@@ -177,6 +177,7 @@ export const routingComponent = [
   SettingContactComponent,
   SettingComponent,
   MatSlideToggleComponent,
+  HomeComponent,
   InputMaskComponent,
   PipesComponent,
   NgSwitchComponent,

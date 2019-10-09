@@ -8,11 +8,8 @@ import {EmployeeService} from './services/employee.service'; // import your serv
   providers: [EmployeeService],
 })
 export class AppComponent {
-  title = 'my-app';
+  // title = 'my-app';
   public name = 'Priyanka';
   public sername = 'Vagadre';
-
   public message = 'hello';
-
- 
 }

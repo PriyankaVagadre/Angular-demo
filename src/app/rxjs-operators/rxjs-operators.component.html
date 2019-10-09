@@ -1,3 +1,5 @@
-<p>
-  rxjs-operators works!
-</p>
+<div *ngFor="let item of listofDog">
+ <p *ngFor="let it of item.dogs">
+   {{it.name}}
+ </p>
+</div>

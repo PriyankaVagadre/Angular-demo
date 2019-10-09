@@ -8,6 +8,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shoping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shoping-list/shopping-edit/shopping-edit.component';
 import { NewProjectRoutingModule } from './new-project.routing.module';
+import { DropDownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NewProjectRoutingModule } from './new-project.routing.module';
     RecipesComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    DropDownDirective
   ],
   imports: [
     CommonModule,

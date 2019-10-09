@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'; // import http module
 // import { TextMaskModule } from 'angular2-text-mask';
 import {NgxMaskModule} from 'ngx-mask';
@@ -55,7 +55,6 @@ import {
   declarations: [
     AppComponent,
     routingComponent,
-    HomeComponent,
     NgclassComponent,
     DateCustomPipeComponent,
     NgGridComponent,
@@ -106,6 +105,7 @@ import {
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   exports : [DateCustomPipeComponent, MatIconModule]
 })
 export class AppModule { }
