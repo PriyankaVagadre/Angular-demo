@@ -41,7 +41,6 @@ const routes: Routes = [
   },
   {
     path: 'property-binding',
-    canActivate : [AuthGuard],
     component: PropertyBindingComponent
   },
   {
@@ -103,12 +102,14 @@ const routes: Routes = [
   {
     path: 'setting',
     component : SettingComponent,
+    // canActivate : [AuthGuard],
+   canActivateChild : [AuthGuard],
     children : [ // children
-       {
-         path : '',
-         redirectTo : 'contact',
-         pathMatch : 'full',
-       },
+      //  {
+      //    path : '',
+      //    redirectTo : 'contact',
+      //    pathMatch : 'full',
+      //  },
        {
          path : 'contact',
          component : SettingContactComponent
