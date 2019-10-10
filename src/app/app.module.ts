@@ -53,6 +53,7 @@ import { NewAccountComponent } from './service-test/new-account/new-account.comp
 import { AccountComponent } from './service-test/account/account.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.service';
+import { UserstatusComponent } from './subject observable/userstatus/userstatus.component';
 
 
 @NgModule({
@@ -85,7 +86,8 @@ import { AuthGuard } from './auth-guard.service';
     NewAccountComponent,
     FileUploadComponent,
     FileSelectDirective,
-    FileDropDirective
+    FileDropDirective,
+    UserstatusComponent
 
   ],
   imports: [
