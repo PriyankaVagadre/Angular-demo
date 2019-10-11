@@ -11,6 +11,12 @@ export class TestcomponentComponent implements OnInit {
   @ViewChild('form') signinForm : NgForm;
   defaultname ='pri';
   genders = ['male','female']
+  userinfo = {
+    username : '',
+    email : '',
+    gender : ''
+  }
+  sumitted = false;
 
   constructor() { }
 
@@ -20,6 +26,10 @@ export class TestcomponentComponent implements OnInit {
   onSubmit(){
     //console.log(form.value);
    console.log(this.signinForm);
+   this.sumitted = true;
+   this.userinfo.username = this.signinForm.value.userdata.username;
+   this.userinfo.email = this.signinForm.value.userdata.email;
+   this.userinfo.gender = this.signinForm.value.userdata.gender;
 
   }
   setValue(){

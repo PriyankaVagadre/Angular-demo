@@ -30,8 +30,17 @@
     <div class="radio" *ngFor="let gender of genders">
       <label>  <input type="radio" ngModel [value]="gender" name="gender"> {{gender}}</label>
     </div>
-    <button (click)='setValue()'>Set Value</button>
-    <button (click)='patchValue()'>Patch Value</button>
   </div>
     <button type="submit" [disabled]="!form.valid">submit</button>
 </form>
+<button (click)='setValue()'>Set Value</button><button (click)='patchValue()'>Patch Value</button>
+<hr>
+
+<div *ngIf="sumitted">
+  <h3>Your Date</h3>
+<div>
+  <label>Username : {{userinfo.username}}</label> <br/>
+  <label>Email : {{userinfo.email}}</label><br/>
+  <label>Gender : {{userinfo.gender}}</label>
+</div>
+</div>
