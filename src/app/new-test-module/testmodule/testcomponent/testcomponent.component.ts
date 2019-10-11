@@ -30,6 +30,7 @@ export class TestcomponentComponent implements OnInit {
    this.userinfo.username = this.signinForm.value.userdata.username;
    this.userinfo.email = this.signinForm.value.userdata.email;
    this.userinfo.gender = this.signinForm.value.userdata.gender;
+   //this.signinForm.reset();
 
   }
   setValue(){
@@ -51,6 +52,10 @@ export class TestcomponentComponent implements OnInit {
        gender : 'female'
      }
    })
+  }
+
+  resetForm(){
+    this.signinForm.reset();
   }
 
 }

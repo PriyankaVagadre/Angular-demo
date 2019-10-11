@@ -33,7 +33,9 @@
   </div>
     <button type="submit" [disabled]="!form.valid">submit</button>
 </form>
-<button (click)='setValue()'>Set Value</button><button (click)='patchValue()'>Patch Value</button>
+<button (click)='setValue()'>Set Value</button>
+<button (click)='patchValue()'>Patch Value</button>
+<button (click)='resetForm()'>Rest Form</button>
 <hr>
 
 <div *ngIf="sumitted">
