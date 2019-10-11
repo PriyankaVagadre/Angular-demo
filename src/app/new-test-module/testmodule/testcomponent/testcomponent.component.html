@@ -1,3 +1,37 @@
 <p>
   testcomponent works!
 </p>
+
+
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+
+  <div ngModelGroup="userdata">
+    <input
+    type="input"
+    name="username"
+    placeholder="username"
+    ngModel
+    #name="ngModel"
+    [(ngModel)]="defaultname"
+    />
+    <input
+    type="email"
+    name="email"
+    placeholder="email"
+    ngModel
+    #email="ngModel"
+    required
+    email
+    [(ngModel)]="emailtest"
+    />
+    <p> Your email test : {{emailtest}}</p>
+    <p *ngIf="email.invalid && email.touched">enter valid Email</p>
+
+    <div class="radio" *ngFor="let gender of genders">
+      <label>  <input type="radio" ngModel [value]="gender" name="gender"> {{gender}}</label>
+    </div>
+    <button (click)='setValue()'>Set Value</button>
+    <button (click)='patchValue()'>Patch Value</button>
+  </div>
+    <button type="submit" [disabled]="!form.valid">submit</button>
+</form>

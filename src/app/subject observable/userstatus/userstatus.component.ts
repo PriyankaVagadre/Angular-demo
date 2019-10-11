@@ -14,14 +14,14 @@ export class UserstatusComponent implements OnInit {
 
   ngOnInit() {
     this.userService.userActivated.subscribe(
-      (id : number)=>{
-        if(id === 1){
-          this.userActivated1 = true;
-        }
-        else{
-          this.userActicvated2 = true;
-        }
-      }
+      // (id : number)=>{
+      //   if(id === 1){
+      //     this.userActivated1 = true;
+      //   }
+      //   else{
+      //     this.userActicvated2 = true;
+      //   }
+      // }
     )
   }
 
