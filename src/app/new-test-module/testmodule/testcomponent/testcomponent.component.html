@@ -3,6 +3,9 @@
 </p>
 
 
+<!-----------template driven form --------------->
+<!------
+
 <form (ngSubmit)="onSubmit()" #form="ngForm">
 
   <div ngModelGroup="userdata">
@@ -46,3 +49,44 @@
   <label>Gender : {{userinfo.gender}}</label>
 </div>
 </div>
+-->
+<!-----------template driven form --------------->
+
+<!-------reactive froms------------>
+
+<form [formGroup]="reactiveForm" (ngSubmit)="submit()" >
+  <div>
+    <div formGroupName="ruserdata">
+    <input
+    type="input"
+    placeholder="rusername"
+    formControlName="rusername"
+    />
+
+    <span *ngIf="reactiveForm.get('ruserdata.rusername').invalid && reactiveForm.get('ruserdata.rusername').touched">Enter username</span>
+    <input
+    type="email"
+    placeholder="remail"
+    formControlName="remail"
+    />
+    <span *ngIf="reactiveForm.get('ruserdata.remail').invalid && reactiveForm.get('ruserdata.remail').touched">Enter valid email id</span>
+  </div>
+  <div formArrayName="hobbies">
+    <h4>Your Hobbies</h4>
+    <div *ngFor="let hobby of reactiveForm.get('hobbies').controls ; let i = index">
+      <input type="text" [formControlName]="i"/>
+    </div>
+    <button type="button" (click)="addHobbies()">Add Hobbies</button>
+  </div>
+  <div class="radio" *ngFor="let rgender of genders">
+    <label><input type="radio"  [value]="rgender" formControlName="rgender"> {{rgender}}</label>
+  </div>
+</div>
+<span *ngIf="reactiveForm.invalid && reactiveForm.touched">Please enter valid data</span>
+
+
+    <button type="submit">submit</button>
+</form>
+
+
+<!-------reactive froms------------>

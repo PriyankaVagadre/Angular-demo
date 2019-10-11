@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm} from '@angular/forms';
+import { NgForm, FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
 import 'rxjs'
 
 @Component({
@@ -8,6 +8,8 @@ import 'rxjs'
   styleUrls: ['./testcomponent.component.scss']
 })
 export class TestcomponentComponent implements OnInit {
+
+  //-----template driven forms--------//
   @ViewChild('form') signinForm : NgForm;
   defaultname ='pri';
   genders = ['male','female']
@@ -17,11 +19,31 @@ export class TestcomponentComponent implements OnInit {
     gender : ''
   }
   sumitted = false;
+ //-----template driven forms--------//
+
+   //-----reactive forms -------//
+   reactiveForm : FormGroup;
+
+   //-----reactive forms -------//
 
   constructor() { }
 
   ngOnInit() {
+
+   //-----reactive forms -------//
+    this.reactiveForm = new FormGroup({
+     'ruserdata' : new FormGroup({
+        'rusername' : new FormControl('ptest', Validators.required),
+        'remail' : new FormControl('', [Validators.required, Validators.email]),
+      }),
+      'hobbies' : new FormArray([]),
+      'rgender' : new FormControl('female')
+    })
+  //-----reactive forms -------//
+
   }
+
+  //-----template driven forms--------//
 
   onSubmit(){
     //console.log(form.value);
@@ -44,7 +66,6 @@ export class TestcomponentComponent implements OnInit {
       }
     )
   }
-
   patchValue(){
    this.signinForm.form.patchValue({
      userdata :{
@@ -53,9 +74,21 @@ export class TestcomponentComponent implements OnInit {
      }
    })
   }
-
   resetForm(){
     this.signinForm.reset();
   }
+  //-----template driven forms--------//
+
+
+  //-----reactive forms -------//
+  submit(){
+    console.log(this.reactiveForm.value);
+    console.log(this.reactiveForm);
+  }
+  addHobbies(){
+    const controls = new FormControl(null, Validators.required);
+    (<FormArray>this.reactiveForm.get('hobbies')).push(controls)
+  }
+  //-----reactive forms -------//
 
 }
