@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm, FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
-import 'rxjs'
+import 'rxjs/Rx'
 
 @Component({
   selector: 'app-testcomponent',
@@ -39,6 +39,14 @@ export class TestcomponentComponent implements OnInit {
       'hobbies' : new FormArray([]),
       'rgender' : new FormControl('female')
     })
+    this.reactiveForm.valueChanges.subscribe(value=>{
+      console.log(value);
+    })
+
+    this.reactiveForm.statusChanges.subscribe(status =>{
+      console.log(status);
+
+    })
   //-----reactive forms -------//
 
   }
@@ -53,7 +61,6 @@ export class TestcomponentComponent implements OnInit {
    this.userinfo.email = this.signinForm.value.userdata.email;
    this.userinfo.gender = this.signinForm.value.userdata.gender;
    //this.signinForm.reset();
-
   }
   setValue(){
     this.signinForm.form.setValue(
